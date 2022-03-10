@@ -1,38 +1,71 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  padding: 4px 16px;
+  background-color: var(--color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header h1 {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+header h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.repl {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.repl-line {
+  display: flex;
+  padding: 0px 8px;
+  line-height: 1.6rem;
+}
+
+.repl-line--input {
+  font-weight: bolder;
+}
+
+.repl-line--active-input {
+  background: #eeeeee;
+  margin-bottom: 64px;
+}
+
+.repl-line--log-stderr {
+  font-style: italic;
+  color: #6d0303;
+  background: #ffdcdc;
+}
+
+.repl-line--log-return {
+  color: #666;
+  font-style: italic;
+}
+
+.repl-line .repl-line__prompt {
+  margin: 0 8px 0 0;
+  color: var(--color);
+}
+
+.repl-line--log-return .repl-line__prompt {
+  font-weight: bolder;
+}
+
+.repl-line textarea {
+  width: 100%;
+  border: 0;
+  resize: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  padding: 0;
+  line-height: inherit;
 }
