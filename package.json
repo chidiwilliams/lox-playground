@@ -2,6 +2,7 @@
   "name": "lox-playground",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chidiwilliams.github.io/lox-playground/",
   "dependencies": {
     "@chidiwilliams/loxjs": "^1.0.2",
     "@testing-library/jest-dom": "^5.16.2",
