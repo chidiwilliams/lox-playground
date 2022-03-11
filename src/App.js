@@ -1,7 +1,7 @@
 import { basicSetup } from '@codemirror/basic-setup';
 import { keymap } from '@codemirror/view';
 import CodeMirror from '@uiw/react-codemirror';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import './App.css';
 import { examplePrograms } from './example-programs';
 import { RunnerWrapper } from './runner-wrapper';
@@ -110,6 +110,10 @@ function App() {
     basicSetup,
   ];
 
+  useEffect(() => {
+    runEditorInput();
+  }, []);
+
   return (
     <div className="App">
       <header>
@@ -143,6 +147,7 @@ function App() {
             }}
             extensions={editorExtensions}
             basicSetup={false}
+            theme="dark"
           />
         </div>
         <div className="repl" onClick={onClickRepl}>
@@ -179,7 +184,7 @@ function App() {
               <div className="repl-line repl-line--active-input" ref={replInputLineRef}>
                 <code className="repl-line__prompt">{'>'}</code>
                 <textarea
-                  className="repl-input-form-line__input"
+                  className="repl-input-form-line__input code"
                   value={replInput}
                   onChange={(evt) => onChangeInput(evt.target.value)}
                   onKeyPress={(evt) => onKeyPress(evt)}
@@ -193,6 +198,31 @@ function App() {
             </div>
           </form>
         </div>
+      </div>
+      <div className="about">
+        <p>
+          This playground runs Lox, the programming language from Robert Nystrom's{' '}
+          <a href="https://craftinginterpreters.com/" target="_blank" rel="noreferrer">
+            Crafting Interpreters
+          </a>
+          . Built by{' '}
+          <a href="https://chidiwilliams.com/" target="_blank" rel="noreferrer">
+            Chidi
+          </a>
+          . Inspired by the{' '}
+          <a href="https://play.dotink.co/" target="_blank" rel="noreferrer">
+            Ink playground
+          </a>
+          . View the source on{' '}
+          <a
+            href="https://github.com/chidiwilliams/lox-playground"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          .
+        </p>
       </div>
     </div>
   );
