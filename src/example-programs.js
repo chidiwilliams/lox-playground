@@ -65,7 +65,7 @@ print nextFactorial();
 print nextFactorial();
 print nextFactorial();
 print nextFactorial();
-  `,
+`,
   },
   {
     name: 'Classes and inheritance',

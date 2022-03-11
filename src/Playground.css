@@ -46,7 +46,6 @@ code,
 
 .workspace {
   display: flex;
-  flex-wrap: wrap;
   flex: 1;
   overflow-y: hidden;
 }
@@ -204,4 +203,9 @@ code,
 
 .about a {
   color: var(--green-0);
+}
+
+select,
+button {
+  font-family: var(--monospace-font);
 }
