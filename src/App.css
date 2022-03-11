@@ -19,9 +19,22 @@ header h1 a {
   text-decoration: none;
 }
 
+.workspace {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.editor {
+  flex: 1;
+  border-right: solid 1px #eeeeee;
+}
+
 .repl {
   overflow-y: auto;
   flex: 1;
+  border-left: solid 1px #eeeeee;
 }
 
 .repl-line {
@@ -32,6 +45,11 @@ header h1 a {
 
 .repl-line--input {
   font-weight: bolder;
+}
+
+.repl-line--input:hover {
+  background: #eeeeee;
+  cursor: pointer;
 }
 
 .repl-line--active-input {
@@ -68,4 +86,40 @@ header h1 a {
   font-size: 1rem;
   padding: 0;
   line-height: inherit;
+}
+
+.code-mirror {
+  height: 100%;
+}
+
+.code-mirror .cm-editor.cm-focused {
+  outline: none;
+}
+
+.editor {
+  position: relative;
+}
+
+.editor-menu {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  padding: 8px;
+  display: flex;
+}
+
+.editor-menu button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+.editor-menu select {
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 3px;
 }
