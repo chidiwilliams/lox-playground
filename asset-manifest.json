@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d8d1994.css",
-    "main.js": "/static/js/main.2ecc0d64.js",
-    "static/js/787.72616143.chunk.js": "/static/js/787.72616143.chunk.js",
-    "index.html": "/index.html",
-    "main.3d8d1994.css.map": "/static/css/main.3d8d1994.css.map",
-    "main.2ecc0d64.js.map": "/static/js/main.2ecc0d64.js.map",
-    "787.72616143.chunk.js.map": "/static/js/787.72616143.chunk.js.map"
+    "main.css": "/lox-playground/static/css/main.3d8d1994.css",
+    "main.js": "/lox-playground/static/js/main.9e7231d2.js",
+    "static/js/787.72616143.chunk.js": "/lox-playground/static/js/787.72616143.chunk.js",
+    "index.html": "/lox-playground/index.html",
+    "main.3d8d1994.css.map": "/lox-playground/static/css/main.3d8d1994.css.map",
+    "main.9e7231d2.js.map": "/lox-playground/static/js/main.9e7231d2.js.map",
+    "787.72616143.chunk.js.map": "/lox-playground/static/js/787.72616143.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d8d1994.css",
-    "static/js/main.2ecc0d64.js"
+    "static/js/main.9e7231d2.js"
   ]
 }
