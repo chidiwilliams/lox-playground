@@ -1,6 +1,6 @@
 # lox-playground
 
-![Screenshot of Lox playground](./public/lox-playground.png)
+![Screenshot of Lox playground](./public/lox-playground-large.png)
 
 A playground for running Lox, the programming language from Bob Nystrom's [Crafting Interpreters](https://craftinginterpreters.com/).
 

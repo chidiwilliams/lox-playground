@@ -45,7 +45,30 @@ print getPi(800);
 `,
   },
   {
-    name: 'Classes and Inheritance',
+    name: 'Factorial generator',
+    source: `// Returns a function that returns the
+// next factorial value starting from 1
+fun getNextFactorial() {
+  var current = 1;
+  var i = 0;
+  return fun () {
+    i = i + 1;
+    current = current * i;
+    return current;
+  };
+}
+
+var nextFactorial = getNextFactorial();
+print nextFactorial();
+print nextFactorial();
+print nextFactorial();
+print nextFactorial();
+print nextFactorial();
+print nextFactorial();
+  `,
+  },
+  {
+    name: 'Classes and inheritance',
     source: `class Doughnut {
   cook() {
     print "Fry until golden brown.";

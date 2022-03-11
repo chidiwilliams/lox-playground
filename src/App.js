@@ -1,12 +1,12 @@
 import { basicSetup } from '@codemirror/basic-setup';
 import { keymap } from '@codemirror/view';
 import CodeMirror from '@uiw/react-codemirror';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { examplePrograms } from './example-programs';
 import { RunnerWrapper } from './runner-wrapper';
 
-const initialSelectedExample = examplePrograms[2];
+const initialSelectedExample = examplePrograms[3];
 const runner = new RunnerWrapper();
 
 function App() {

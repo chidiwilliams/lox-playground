@@ -52,19 +52,33 @@ code,
 }
 
 .editor {
-  flex: 1;
-  min-width: 400px;
+  flex: 1 400px;
   border-right: solid 5px var(--dark-5);
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .editor {
+    border: 0;
+    height: 50%;
+  }
+
+  .workspace {
+    flex-direction: column;
+  }
+
+  .repl {
+    height: 50%;
+  }
 }
 
 .repl {
   overflow-y: auto;
-  flex: 1;
-  min-width: 400px;
+  flex: 1 400px;
   background: var(--dark-3);
 }
 
@@ -124,6 +138,7 @@ code,
 .code-mirror {
   height: 100%;
   width: 100%;
+  overflow-y: auto;
 }
 
 .code-mirror .cm-editor.cm-focused {
