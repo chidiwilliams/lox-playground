@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepublish": "npm run build",
-    "publish": "gh-pages -d public"
+    "publish": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
